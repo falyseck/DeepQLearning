@@ -1,0 +1,2 @@
+member,run_name,env_id,policy,lr,gamma,batch_size,exploration_initial_eps,exploration_final_eps,exploration_fraction,total_timesteps,model_path,noted_behavior
+unknown,run_20260708_151506,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,200000,models\run_20260708_151506\dqn_model.zip,TODO: fill in observed behavior after reviewing TensorBoard logs

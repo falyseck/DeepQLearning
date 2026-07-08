@@ -1,0 +1,5 @@
+gymnasium[atari,accept-rom-license]
+stable-baselines3[extra]
+ale-py
+opencv-python
+tensorboard
