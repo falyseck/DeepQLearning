@@ -1,16 +1,16 @@
 member,run_name,env_id,policy,lr,gamma,batch_size,exploration_initial_eps,exploration_final_eps,exploration_fraction,total_timesteps,model_path,noted_behavior
 unknown,run_20260708_151506,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,200000,models\run_20260708_151506\dqn_model.zip,TODO: fill in observed behavior after reviewing TensorBoard logs
-Faly,baseline,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,100000,models\baseline\dqn_model.zip,Mixed baseline: one run around -13 (short-medium episodes), another around -31 (poor performance).
-Faly,FalyExp2,ALE/Boxing-v5,CnnPolicy,0.001,0.99,32,1.0,0.05,0.1,100000,models\baseline\dqn_model.zip,Likely unstable due to high learning rate; rewards inconsistent, episodes terminate quickly.
-Faly,FalyExp3,ALE/Boxing-v5,CnnPolicy,1e-05,0.99,32,1.0,0.05,0.1,100000,models\FalyExp3\dqn_model.zip,Strongly negative rewards (~-25 to -30), short episodes; agent fails to learn effective policy.
-Faly,FalyExp4,ALE/Boxing-v5,CnnPolicy,0.0001,0.9,32,1.0,0.05,0.1,100000,models\FalyExp4\dqn_model.zip,Moderately negative (~-15 to -19), episodes somewhat longer; lower gamma may reduce stability.
-Faly,FalyExp5,ALE/Boxing-v5,CnnPolicy,0.0001,0.999,32,1.0,0.05,0.1,100000,models\FalyExp5\dqn_model.zip,Slight improvement (~-17), longer episodes; high gamma stabilizes but still negative rewards.
-Faly,FalyExp6,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,16,1.0,0.05,0.1,100000,models\FalyExp6\dqn_model.zip,Poor performance (~-30), shorter episodes; small batch size hurts stability.
-Faly,FalyExp7,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,128,1.0,0.05,0.1,100000,models\FalyExp7\dqn_model.zip,Positive rewards (~+2), longer episodes; larger batch size yields stable and successful learning.
-Faly,FalyExp8,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.02,100000,models\FalyExp8\dqn_model.zip,Negative rewards, short episodes; reduced exploration fraction limits learning.
-Faly,FalyExp9,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.3,100000,models\FalyExp9\dqn_model.zip,Strongly negative (~-34), unstable episodes; high exploration fraction prevents convergence.
+Faly,baseline,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,100000,models\baseline\dqn_model.zip,"Mixed baseline: one run around -13 (short-medium episodes), another around -31 (poor performance)."
+Faly,FalyExp2,ALE/Boxing-v5,CnnPolicy,0.001,0.99,32,1.0,0.05,0.1,100000,models\baseline\dqn_model.zip,"Likely unstable due to high learning rate; rewards inconsistent, episodes terminate quickly."
+Faly,FalyExp3,ALE/Boxing-v5,CnnPolicy,1e-05,0.99,32,1.0,0.05,0.1,100000,models\FalyExp3\dqn_model.zip,"Strongly negative rewards (~-25 to -30), short episodes; agent fails to learn effective policy."
+Faly,FalyExp4,ALE/Boxing-v5,CnnPolicy,0.0001,0.9,32,1.0,0.05,0.1,100000,models\FalyExp4\dqn_model.zip,"Moderately negative (~-15 to -19), episodes somewhat longer; lower gamma may reduce stability."
+Faly,FalyExp5,ALE/Boxing-v5,CnnPolicy,0.0001,0.999,32,1.0,0.05,0.1,100000,models\FalyExp5\dqn_model.zip,"Slight improvement (~-17), longer episodes; high gamma stabilizes but still negative rewards."
+Faly,FalyExp6,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,16,1.0,0.05,0.1,100000,models\FalyExp6\dqn_model.zip,"Poor performance (~-30), shorter episodes; small batch size hurts stability."
+Faly,FalyExp7,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,128,1.0,0.05,0.1,100000,models\FalyExp7\dqn_model.zip,"Positive rewards (~+2), longer episodes; larger batch size yields stable and successful learning."
+Faly,FalyExp8,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.02,100000,models\FalyExp8\dqn_model.zip,"Negative rewards, short episodes; reduced exploration fraction limits learning."
+Faly,FalyExp9,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.3,100000,models\FalyExp9\dqn_model.zip,"Strongly negative (~-34), unstable episodes; high exploration fraction prevents convergence."
 Faly,FalyExp10,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,100000,models\FalyExp10\dqn_model.zip,
-Similar to baseline, negative rewards, medium episodes; no significant improvement.
+'Similar to baseline, negative rewards, medium episodes; no significant improvement.'
 
 
 
