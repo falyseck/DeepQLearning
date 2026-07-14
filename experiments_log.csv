@@ -1,5 +1,4 @@
 member,run_name,env_id,policy,lr,gamma,batch_size,exploration_initial_eps,exploration_final_eps,exploration_fraction,total_timesteps,model_path,noted_behavior
-unknown,run_20260708_151506,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,200000,models\run_20260708_151506\dqn_model.zip,TODO: fill in observed behavior after reviewing TensorBoard logs
 Faly,baseline,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,100000,models\baseline\dqn_model.zip,"Mixed baseline: one run around -13 (short-medium episodes), another around -31 (poor performance)."
 Faly,FalyExp2,ALE/Boxing-v5,CnnPolicy,0.001,0.99,32,1.0,0.05,0.1,100000,models\baseline\dqn_model.zip,"Likely unstable due to high learning rate; rewards inconsistent, episodes terminate quickly."
 Faly,FalyExp3,ALE/Boxing-v5,CnnPolicy,1e-05,0.99,32,1.0,0.05,0.1,100000,models\FalyExp3\dqn_model.zip,"Strongly negative rewards (~-25 to -30), short episodes; agent fails to learn effective policy."
