@@ -29,3 +29,4 @@ Kayonga Elvis,Elvis_gamma95,ALE/Boxing-v5,CnnPolicy,0.0001,0.95,128,1.0,0.05,0.1
 Kayonga Elvis,Elvis_gamma9999,ALE/Boxing-v5,CnnPolicy,0.0001,0.9999,128,1.0,0.05,0.1,150000,models/Elvis_gamma9999/dqn_model.zip,"reward went -8.2 -> 3.9 (best 3.9), trend improving, ep_len ~1786"
 Kayonga Elvis,Elvis_batch256,ALE/Boxing-v5,CnnPolicy,0.0001,0.999,256,1.0,0.05,0.1,150000,models/Elvis_batch256/dqn_model.zip,"reward went -8.2 -> 6.1 (best 6.1), trend improving, ep_len ~1786"
 Kayonga Elvis,Elvis_epsstart05,ALE/Boxing-v5,CnnPolicy,0.0001,0.999,128,0.5,0.05,0.1,150000,models/Elvis_epsstart05/dqn_model.zip,"reward went -8.2 -> 6.9 (best 6.9), trend improving, ep_len ~1786"
+Kayonga Elvis,Elvis_epsend01,ALE/Boxing-v5,CnnPolicy,0.0001,0.999,128,1.0,0.1,0.1,150000,models/Elvis_epsend01/dqn_model.zip,"reward went -8.2 -> -0.2 (best -0.2), trend improving, ep_len ~1786"
