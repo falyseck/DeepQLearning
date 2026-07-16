@@ -23,3 +23,4 @@ Kayonga Elvis,Elvis_sanity_check,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05
 Kayonga Elvis,Elvis_sanity_check,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,5000,models/Elvis_sanity_check/dqn_model.zip,TODO: fill in observed behavior after reviewing TensorBoard logs
 Kayonga Elvis,Elvis_sanity_check,ALE/Boxing-v5,CnnPolicy,0.0001,0.99,32,1.0,0.05,0.1,5000,models/Elvis_sanity_check/dqn_model.zip,TODO: fill in observed behavior after reviewing TensorBoard logs
 Kayonga Elvis,Elvis_baseline_seed7,ALE/Boxing-v5,CnnPolicy,0.0001,0.999,32,1.0,0.05,0.1,150000,models/Elvis_baseline_seed7/dqn_model.zip,"reward went -9.8 -> -30.3 (best -6.9), trend declining, ep_len ~1786"
+Kayonga Elvis,Elvis_lr3e-4,ALE/Boxing-v5,CnnPolicy,0.0003,0.999,64,1.0,0.05,0.1,150000,models/Elvis_lr3e-4/dqn_model.zip,"reward went -8.2 -> -18.2 (best -8.1), trend declining, ep_len ~1786"
