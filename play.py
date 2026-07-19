@@ -13,8 +13,8 @@ Notes
 - Evaluation uses a greedy policy (deterministic=True), i.e. the agent always
   picks the action with the highest Q-value — no exploration/epsilon here.
   This is the "GreedyQPolicy" behavior the assignment asks for.
-- Use --record to save an mp4 of the gameplay for the README/presentation,
-  in addition to (or instead of) --render for a live GUI window.
+- Use --record to save an mp4 of the gameplay for the README/presentation.
+  Recording replaces the live GUI window (--render is ignored while recording).
 """
 
 import argparse
@@ -27,7 +27,7 @@ from stable_baselines3.common.vec_env import VecFrameStack, VecTransposeImage, V
 
 def parse_args():
     p = argparse.ArgumentParser(description="Evaluate a trained DQN Atari agent.")
-    p.add_argument("--model_path", type=str, default="models\\run_20260708_151506\\dqn_model.zip",  #"models/best_run/dqn_model.zip"
+    p.add_argument("--model_path", type=str, default="models/NickExp6_b128_g999/dqn_model.zip",
                     help="Path to the trained dqn_model.zip.")
     p.add_argument("--env_id", type=str, default="ALE/Boxing-v5",
                     help="Must match the environment used during training.")
