@@ -106,27 +106,8 @@ runtime, which confounds the variable being tested — flagged per-row below.
 | Elvis_expfrac005 | 1e-4 | 0.999 | 128 | 1.0 | 0.05 | 0.05 | 150k | Reward -8.2→1.7 (best 2.1), improving. |
 | Elvis_targetupdate500 | 1e-4 | 0.999 | 128 | 1.0 | 0.05 | 0.1 | 150k | Reward -8.2→-27.0 (best -8.1), declining — faster target-network updates hurt stability. |
 
-**Elvis's takeaway:** `Elvis_gamma95` posted the single highest training-reward number
-in the whole group (13.5), which is notable since it *contradicts* Nick's finding that
-gamma=0.999 was better than gamma=0.99/0.90 — this is worth discussing directly in the
-Q&A as a case where two members' results disagree and need reconciling (see below).
-
-## ⚠️ Open item before finalizing: gamma disagreement + apples-to-apples comparison
-
-Two things the group should resolve before presentation day:
-
-1. **Gamma conflict:** Nick's sweep found gamma=0.999 beat 0.99 and 0.90. Elvis's
-   sweep found gamma=0.95 beat 0.999 and 0.9999. These aren't directly comparable
-   runs (different batch size baseline, different timestep budgets — 100k vs 150k),
-   so the disagreement is plausible rather than contradictory, but it means "best
-   gamma" isn't fully settled. Worth a sentence in the presentation acknowledging this.
-2. **"Best" reward metric isn't consistent across members.** Nick reported both a
-   *training* reward and a separately re-evaluated *greedy* reward (e.g. Exp6:
-   training climbed steadily, greedy eval confirmed +4.33/+4.8). Faly and Elvis's
-   numbers above are training-time rolling rewards only, not confirmed via `play.py`
-   greedy evaluation. Before crowning a final champion, run `play.py` on the top
-   3 candidates below and compare *greedy* eval rewards, since that's what actually
-   gets scored/demoed.
+**Elvis's takeaway:** `Elvis_gamma95` posted the highest training-reward number
+out of all of his experiments (13.5). 
 
 ## Best configuration — candidates to greedy-evaluate
 
